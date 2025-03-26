@@ -1,4 +1,4 @@
-
+/*
 
 
 
@@ -93,7 +93,7 @@ p {
   line-height: 1.6;
 }
 
-/* Optional: Add hover effect */
+
 .faq__content:hover {
   background-color: #85d1e2;
   transition: background-color 0.3s ease;
@@ -1365,6 +1365,276 @@ button:hover {
   visibility: visible;
 }
 
+*/
 
+
+
+body, h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.App {
+  text-align: center;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+}
+
+.App-logo {
+  height: 100px;
+  margin-bottom: 20px;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-header {
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  background-color: #2e606c;
+  padding: 10px 0;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+main {
+  padding: 2rem;
+}
+
+.hero {
+  text-align: center;
+  background-image: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+  background-size: cover;
+  background-position: center;
+  padding: 5rem;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: 1;
+}
+
+.hero > * {
+  z-index: 2; /* Ensure content is above overlay */
+  position: relative;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+#about-us, #services, #faq, #contact {
+  padding: 40px;
+  margin: 20px auto;
+  max-width: 1000px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#services {
+  background-color: #f9f9f9;
+}
+
+#faq {
+  background-color: #f0f0f0;
+}
+
+.service-item, .faq-item {
+  background-color: #e6f7ff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover, .faq-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-item h3, .faq-item h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #e0f7fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-form label {
+  margin-bottom: 8px;
+}
+
+.appointment-form input[type="text"],
+.appointment-form input[type="date"],
+.appointment-form input[type="time"],
+.appointment-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.appointment-form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.appointment-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 40px;
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.lawsession {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.lawsession img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.align {
+  text-align: center;
+  margin: 20px;
+  font-size: 2em;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.search-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.search-box {
+  display: flex;
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-box input[type="text"] {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
 
 
